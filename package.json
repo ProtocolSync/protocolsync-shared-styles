@@ -5,7 +5,7 @@
   "main": "scss/index.scss",
   "exports": {
     ".": "./scss/index.scss",
-    "./scss/*": "./scss/*"
+    "./scss/*.scss": "./scss/*.scss"
   },
   "files": [
     "scss/**/*.scss"
