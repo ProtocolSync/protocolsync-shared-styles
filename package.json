@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Shared SCSS styles for ProtocolSync applications",
   "main": "scss/index.scss",
+  "exports": {
+    ".": "./scss/index.scss",
+    "./scss/*": "./scss/*"
+  },
   "files": [
     "scss/**/*.scss"
   ],
