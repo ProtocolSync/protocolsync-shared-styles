@@ -9,20 +9,27 @@ Add to your project's `package.json`:
 ```json
 {
   "dependencies": {
-    "@protocolsync/shared-styles": "github:protocolsync/protocolsync-shared-styles#v1.0.0"
+    "@protocolsync/shared-styles": "github:ProtocolSync/protocolsync-shared-styles#v1.0.0"
   }
 }
 ```
 
-Or use a local file path during development:
+## Local Development
 
-```json
-{
-  "dependencies": {
-    "@protocolsync/shared-styles": "file:../protocolsync-shared-styles"
-  }
-}
+For **real-time style updates** during development, use npm link:
+
+```bash
+# In shared-styles repo
+cd /Users/davidtay/Documents/Projects/protocolsync-shared-styles
+./link-local.sh
+
+# Now edit SCSS files and see instant changes in portal and admin!
+
+# When done, restore GitHub version
+./unlink-local.sh
 ```
+
+See [LOCAL_DEVELOPMENT.md](LOCAL_DEVELOPMENT.md) for detailed workflow.
 
 ## Usage
 
