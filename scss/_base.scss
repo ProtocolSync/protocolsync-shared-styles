@@ -1,0 +1,56 @@
+// =====================================================
+// Base Layer - Root Variables & Global Styles
+// =====================================================
+@layer base {
+  :root {
+    /* Override CoreUI Font Variables */
+    --cui-font-sans-serif: 'Lato', sans-serif;
+    --cui-font-monospace: 'Lato', monospace;
+    --cui-body-font-family: 'Lato', sans-serif;
+    --cui-body-font-size: 16px;
+
+    /* Design Token Colors */
+    --color-brand-primary: #{$color-brand-primary};
+    --color-brand-secondary: #{$color-brand-secondary};
+    --color-brand-accent-green: #{$color-accent-green-500};
+    --color-brand-accent-green-100: #{$color-accent-green-100};
+    --color-brand-accent-green-300: #{$color-accent-green-300};
+    --color-brand-accent-green-500: #{$color-accent-green-500};
+    --color-brand-accent-green-700: #{$color-accent-green-700};
+    --color-brand-accent-green-900: #{$color-accent-green-900};
+    --color-text-default: #{$color-text-default};
+    --color-text-subtle: #{$color-text-subtle};
+    --color-text-inverse: #{$color-text-inverse};
+    --color-text-error: #{$color-text-error};
+    --color-text-success: #{$color-text-success};
+    --color-background-page: #{$color-background-page};
+    --color-background-card: #{$color-background-card};
+    --color-background-focus: #{$color-background-focus};
+
+    /* Design Token Spacing */
+    --spacing-xxs: #{$spacing-xxs};
+    --spacing-xs: #{$spacing-xs};
+    --spacing-s: #{$spacing-s};
+    --spacing-m: #{$spacing-m};
+    --spacing-l: #{$spacing-l};
+    --spacing-xl: #{$spacing-xl};
+
+    /* Design Token Shadows */
+    --shadow-default: #{$shadow-default};
+    --shadow-lifted: #{$shadow-lifted};
+
+    line-height: 1.5;
+    font-size: 14px;
+    font-family: var(--cui-body-font-family);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: $font-family-primary;
+  }
+}

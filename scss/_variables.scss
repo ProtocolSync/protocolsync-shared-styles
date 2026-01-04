@@ -1,0 +1,62 @@
+// =====================================================
+// Design Token Variables
+// =====================================================
+// Based on design.json - ProtocolSync brand identity
+
+// Brand Colors
+$color-brand-primary: #1E3A52;
+$color-brand-secondary: #9AAAB5;
+
+// Accent Green Palette
+$color-accent-green-100: #B2E6DF;
+$color-accent-green-300: #008A75;
+$color-accent-green-500: #005C4D;  // Base Dark Clinical Green
+$color-accent-green-700: #004739;
+$color-accent-green-900: #00332A;
+
+// Text Colors
+$color-text-default: $color-brand-primary;
+$color-text-subtle: #6C7A89;
+$color-text-inverse: #FFFFFF;
+$color-text-error: #CC0000;
+$color-text-success: $color-accent-green-500;
+$color-text-link: #007BFF;
+
+// Background Colors
+$color-background-page: #F9FAFB;
+$color-background-card: #FFFFFF;
+$color-background-focus: #E0E6EB;
+$color-background-success-light: $color-accent-green-100;
+$color-background-subtle: #f9fafb;
+
+// Border Colors
+$color-border-light: #e5e7eb;
+$color-border-medium: #d1d5db;
+
+// Spacing
+$spacing-xxs: 0.25rem;
+$spacing-xs: 0.5rem;
+$spacing-s: 1rem;
+$spacing-m: 1.5rem;
+$spacing-l: 2rem;
+$spacing-xl: 3rem;
+
+// Shadows
+$shadow-default: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-lifted: 0 8px 16px rgba(0, 0, 0, 0.15);
+$shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-card-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+// Typography
+$font-family-primary: 'Lato', sans-serif;
+$font-size-xxs: 0.75rem;
+$font-size-xs: 0.875rem;
+$font-size-s: 1rem;
+$font-size-m: 1rem;
+$font-size-l: 1.5rem;
+$font-size-xl: 2rem;
+$font-size-xxl: 2.5rem;
+
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;

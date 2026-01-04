@@ -1,0 +1,28 @@
+// =====================================================
+// ProtocolSync Shared Styles - Main Entry Point
+// =====================================================
+// Usage: @import '@protocolsync/shared-styles';
+
+// Import CoreUI SCSS (provides mixins like transition)
+@use "@coreui/coreui/scss/coreui" as * with (
+  $enable-deprecation-messages: false,
+  $font-family-base: ('Lato', sans-serif),
+  $font-family-sans-serif: ('Lato', sans-serif)
+);
+
+// Import Lato font
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap');
+
+// Import Tailwind directives (apps using this should have Tailwind configured)
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Import design token variables first
+@import './variables';
+
+// Import modular SCSS files
+@import './base';
+@import './utilities';
+@import './components';
+@import './layout';

@@ -1,0 +1,132 @@
+// =====================================================
+// Layout Patterns - Sidebar, Header, Footer, Breadcrumbs
+// =====================================================
+
+// CoreUI Layout Integration
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding-inline: var(--cui-sidebar-occupy-start, 0) var(--cui-sidebar-occupy-end, 0);
+  will-change: auto;
+  @include transition(padding .15s);
+}
+
+.header > .container-fluid,
+.sidebar-header {
+  min-height: calc(4rem + 1px);
+}
+
+.sidebar {
+  min-height: 100vh;
+
+  .nav-link {
+    color: #ffffff;
+    font-size: 16px;
+
+    &:hover {
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    &.active {
+      color: #ffffff;
+      background-color: #004739;
+    }
+  }
+
+  .nav-title {
+    color: #B2E6DF;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .nav-icon {
+    color: #ffffff;
+  }
+}
+
+.sidebar-logo {
+  height: 20px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.sidebar-brand-text {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.sidebar-brand-narrow {
+  height: 32px;
+  width: auto;
+}
+
+// Header Styling
+.admin-header {
+  background-color: $color-background-card;
+  border-bottom: 1px solid $color-border-light;
+  box-shadow: $shadow-default;
+}
+
+// Breadcrumb Styling
+.breadcrumb-container {
+  font-size: 16px;
+}
+
+.breadcrumb-link {
+  text-decoration: none;
+  color: #007bff;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.breadcrumb-separator {
+  margin: 0 8px;
+  color: #6c757d;
+}
+
+.breadcrumb-current {
+  color: #6c757d;
+}
+
+// Header User Profile Styling
+.admin-signout-link {
+  font-size: 12px;
+  font-weight: 700;
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: #0056b3;
+    text-decoration: none;
+  }
+}
+
+// Footer Styling
+.admin-footer {
+  background-color: #f5f5f5;
+  border-top: 1px solid $color-border-light;
+  padding: 12px 21px 12px 21px;
+  margin-top: auto;
+
+  a {
+    color: #5856d6;
+
+    &:hover {
+      color: #5856d6;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Admin Content Area
+.admin-content {
+  background-color: $color-background-page;
+  min-height: calc(100vh - 4rem);
+}

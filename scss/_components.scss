@@ -1,0 +1,89 @@
+// =====================================================
+// Shared Component Styles
+// =====================================================
+
+// Modal Components
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  position: relative;
+  z-index: 10001;
+  margin: auto;
+}
+
+// Card Styling
+.card {
+  box-shadow: $shadow-card;
+  border: 1px solid $color-border-light;
+  border-radius: 0.5rem;
+
+  &:hover {
+    box-shadow: $shadow-card-lg;
+  }
+}
+
+// Table Styling
+.table {
+  background-color: $color-background-card;
+
+  thead {
+    background-color: $color-background-subtle;
+    border-bottom: 2px solid $color-border-medium;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid $color-border-light;
+
+    &:hover {
+      background-color: $color-background-focus;
+    }
+  }
+}
+
+// Button Overrides for Brand Colors
+.btn-primary {
+  background-color: $color-accent-green-500;
+  border-color: $color-accent-green-500;
+
+  &:hover {
+    background-color: $color-accent-green-700;
+    border-color: $color-accent-green-700;
+  }
+
+  &:active, &:focus {
+    background-color: $color-accent-green-900;
+    border-color: $color-accent-green-900;
+  }
+}
+
+.btn-success {
+  background-color: $color-accent-green-300;
+  border-color: $color-accent-green-300;
+
+  &:hover {
+    background-color: $color-accent-green-500;
+    border-color: $color-accent-green-500;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@protocolsync/shared-styles",
+  "version": "1.0.0",
+  "description": "Shared SCSS styles for ProtocolSync applications",
+  "main": "scss/index.scss",
+  "files": [
+    "scss/**/*.scss"
+  ],
+  "keywords": [
+    "protocolsync",
+    "scss",
+    "styles",
+    "design-system"
+  ],
+  "author": "Protocol Sync LLC",
+  "license": "PRIVATE",
+  "peerDependencies": {
+    "@coreui/coreui": "^5.0.0",
+    "sass": "^1.0.0"
+  }
+}
