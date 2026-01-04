@@ -17,5 +17,8 @@
   "peerDependencies": {
     "@coreui/coreui": "^5.0.0",
     "sass": "^1.0.0"
+  },
+  "devDependencies": {
+    "@coreui/coreui": "^5.4.3"
   }
 }
