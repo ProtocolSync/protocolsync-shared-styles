@@ -1,28 +1,57 @@
 {
   "name": "@protocolsync/shared-styles",
-  "version": "1.0.0",
-  "description": "Shared SCSS styles for ProtocolSync applications",
+  "version": "2.0.0",
+  "description": "Shared design system for ProtocolSync applications (web & mobile)",
   "main": "scss/index.scss",
+  "types": "mobile/index.ts",
   "exports": {
     ".": "./scss/index.scss",
-    "./scss/*.scss": "./scss/*.scss"
+    "./scss/*.scss": "./scss/*.scss",
+    "./design-tokens": "./design-tokens.js",
+    "./design-tokens.json": "./design-tokens.json",
+    "./mobile": "./mobile/index.ts",
+    "./mobile/theme": "./mobile/theme.ts",
+    "./mobile/tokens": "./mobile/tokens.ts"
   },
   "files": [
-    "scss/**/*.scss"
+    "scss/**/*.scss",
+    "design-tokens.json",
+    "design-tokens.js",
+    "mobile/**/*.ts",
+    "scripts/**/*.js"
   ],
+  "scripts": {
+    "generate-tokens": "node scripts/generate-tokens.js",
+    "prepublishOnly": "npm run generate-tokens"
+  },
   "keywords": [
     "protocolsync",
     "scss",
     "styles",
-    "design-system"
+    "design-system",
+    "react-native",
+    "mobile"
   ],
   "author": "Protocol Sync LLC",
   "license": "PRIVATE",
   "peerDependencies": {
     "@coreui/coreui": "^5.0.0",
-    "sass": "^1.0.0"
+    "sass": "^1.0.0",
+    "react-native-paper": "^5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react-native-paper": {
+      "optional": true
+    },
+    "@coreui/coreui": {
+      "optional": true
+    },
+    "sass": {
+      "optional": true
+    }
   },
   "devDependencies": {
-    "@coreui/coreui": "^5.4.3"
+    "@coreui/coreui": "^5.4.3",
+    "react-native-paper": "^5.12.5"
   }
 }

@@ -1,15 +1,33 @@
-# ProtocolSync Shared Styles
+# ProtocolSync Shared Styles v2.0
 
-Shared SCSS design system for ProtocolSync applications (Portal, Admin, etc.)
+Shared design system for ProtocolSync applications (Portal, Admin, Mobile)
+
+## What's New in v2.0
+
+✨ **Multi-Platform Support**: Now supports both web (SCSS) and mobile (React Native)  
+✨ **Design Tokens**: JSON-based design tokens with platform-specific exports  
+✨ **React Native Theme**: Pre-configured React Native Paper theme  
+✨ **TypeScript Support**: Full type definitions for mobile tokens
 
 ## Installation
 
-Add to your project's `package.json`:
+### For Web Projects (Portal, Admin)
 
 ```json
 {
   "dependencies": {
-    "@protocolsync/shared-styles": "github:ProtocolSync/protocolsync-shared-styles#v1.0.0"
+    "@protocolsync/shared-styles": "github:ProtocolSync/protocolsync-shared-styles#v2.0.0"
+  }
+}
+```
+
+### For Mobile Projects
+
+```json
+{
+  "dependencies": {
+    "@protocolsync/shared-styles": "file:../protocolsync-shared-styles",
+    "react-native-paper": "^5.12.5"
   }
 }
 ```
