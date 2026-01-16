@@ -209,3 +209,53 @@
     overflow: hidden;
   }
 }
+
+// =====================================================
+// Login Page Styles
+// =====================================================
+
+.login-logo {
+  height: 100px;
+  width: auto;
+}
+
+.login-brand-title {
+  color: $color-brand-primary;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+}
+
+.login-btn-microsoft {
+  background-color: $color-accent-green-500;
+  border-color: $color-accent-green-500;
+
+  &:hover {
+    background-color: $color-accent-green-700;
+    border-color: $color-accent-green-700;
+  }
+}
+
+.login-footer-text {
+  font-size: $font-size-small;
+}
+
+.login-signup-card {
+  background-color: $color-accent-green-500;
+  width: 44%;
+}
+
+.login-signup-card .btn.login-btn-register {
+  background-color: $color-background-card;
+  border-color: $color-background-card;
+  color: $color-accent-green-500;
+  font-weight: $font-weight-semibold;
+  padding: 0.5rem 1.5rem;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-accent-green-100;
+    border-color: $color-accent-green-100;
+    color: $color-accent-green-700;
+  }
+}
