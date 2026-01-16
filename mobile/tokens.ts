@@ -10,16 +10,26 @@ export interface ColorTokens {
   brand: {
     primary: string;
     secondary: string;
+    accentGreen: string;
+    accentGreen100: string;
+    accentGreen300: string;
+    accentGreen500: string;
+    accentGreen700: string;
+    accentGreen900: string;
   };
   accent: {
     green100: string;
     green300: string;
     green500: string;
+    green600: string;
     green700: string;
     green900: string;
+    blue500: string;
   };
   text: {
     default: string;
+    heading: string;
+    body: string;
     subtle: string;
     inverse: string;
     error: string;
@@ -36,6 +46,7 @@ export interface ColorTokens {
   border: {
     light: string;
     medium: string;
+    subtle: string;
   };
 }
 
@@ -49,7 +60,9 @@ export interface SpacingTokens {
 }
 
 export interface TypographyTokens {
-  fontFamily: string;
+  fontFamily: {
+    primary: string;
+  };
   fontSize: {
     xxs: number;
     xs: number;
@@ -74,7 +87,7 @@ export interface ShadowToken {
   elevation: number;
 }
 
-export interface ShadowTokens {
+export interface ShadowMobileTokens {
   default: ShadowToken;
   lifted: ShadowToken;
   card: ShadowToken;
@@ -85,12 +98,24 @@ export interface DesignTokens {
   color: ColorTokens;
   spacing: SpacingTokens;
   typography: TypographyTokens;
-  shadow: ShadowTokens;
+  borderRadius: {
+    none: string;
+    default: string;
+    round: string;
+  };
+  shadow: {
+    default: string;
+    lifted: string;
+  };
+  shadowMobile: ShadowMobileTokens;
 }
 
 export const designTokens: DesignTokens = tokens as DesignTokens;
 
 // Re-export for convenience
-export const { color, spacing, typography, shadow } = designTokens;
+export const { color, spacing, typography, shadowMobile } = designTokens;
+
+// Alias shadowMobile as shadow for mobile usage
+export const shadow = shadowMobile;
 
 export default designTokens;

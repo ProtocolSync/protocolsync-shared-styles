@@ -8,17 +8,27 @@ export const designTokens = {
   "color": {
     "brand": {
       "primary": "#1E3A52",
-      "secondary": "#9AAAB5"
+      "secondary": "#9AAAB5",
+      "accentGreen": "#005C4D",
+      "accentGreen100": "#B2E6DF",
+      "accentGreen300": "#008A75",
+      "accentGreen500": "#005C4D",
+      "accentGreen700": "#004739",
+      "accentGreen900": "#00332A"
     },
     "accent": {
       "green100": "#B2E6DF",
       "green300": "#008A75",
       "green500": "#005C4D",
+      "green600": "#004F42",
       "green700": "#004739",
-      "green900": "#00332A"
+      "green900": "#00332A",
+      "blue500": "#007BFF"
     },
     "text": {
       "default": "#1E3A52",
+      "heading": "#1E3A52",
+      "body": "#4A5568",
       "subtle": "#6C7A89",
       "inverse": "#FFFFFF",
       "error": "#CC0000",
@@ -34,7 +44,8 @@ export const designTokens = {
     },
     "border": {
       "light": "#e5e7eb",
-      "medium": "#d1d5db"
+      "medium": "#d1d5db",
+      "subtle": "#f3f4f6"
     }
   },
   "spacing": {
@@ -46,7 +57,9 @@ export const designTokens = {
     "xl": 48
   },
   "typography": {
-    "fontFamily": "Lato",
+    "fontFamily": {
+      "primary": "Lato"
+    },
     "fontSize": {
       "xxs": 12,
       "xs": 14,
@@ -62,7 +75,16 @@ export const designTokens = {
       "bold": "700"
     }
   },
+  "borderRadius": {
+    "none": "0",
+    "default": "4px",
+    "round": "50%"
+  },
   "shadow": {
+    "default": "0 2px 4px rgba(0, 0, 0, 0.1)",
+    "lifted": "0 8px 16px rgba(0, 0, 0, 0.15)"
+  },
+  "shadowMobile": {
     "default": {
       "shadowColor": "#000000",
       "shadowOffset": {

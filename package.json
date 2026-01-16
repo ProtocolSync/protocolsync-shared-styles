@@ -1,23 +1,41 @@
 {
   "name": "@protocolsync/shared-styles",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Shared design system for ProtocolSync applications (web & mobile)",
   "main": "scss/index.scss",
   "types": "mobile/index.ts",
   "exports": {
     ".": "./scss/index.scss",
     "./scss/*.scss": "./scss/*.scss",
-    "./design-tokens": "./design-tokens.js",
+    "./design-tokens": {
+      "types": "./design-tokens.d.ts",
+      "import": "./design-tokens.js",
+      "require": "./design-tokens.js",
+      "default": "./design-tokens.js"
+    },
     "./design-tokens.json": "./design-tokens.json",
+    "./tailwind-preset": {
+      "import": "./tailwind/preset.js",
+      "require": "./tailwind/preset.js",
+      "default": "./tailwind/preset.js"
+    },
     "./mobile": "./mobile/index.ts",
     "./mobile/theme": "./mobile/theme.ts",
-    "./mobile/tokens": "./mobile/tokens.ts"
+    "./mobile/tokens": "./mobile/tokens.ts",
+    "./mobile/nativewind-preset": {
+      "import": "./mobile/nativewind-preset.js",
+      "require": "./mobile/nativewind-preset.js",
+      "default": "./mobile/nativewind-preset.js"
+    }
   },
   "files": [
     "scss/**/*.scss",
     "design-tokens.json",
     "design-tokens.js",
+    "design-tokens.d.ts",
+    "tailwind/**/*.js",
     "mobile/**/*.ts",
+    "mobile/**/*.js",
     "scripts/**/*.js"
   ],
   "scripts": {

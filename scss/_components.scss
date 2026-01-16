@@ -2,6 +2,29 @@
 // Shared Component Styles
 // =====================================================
 
+// =====================================================
+// Sidebar Styles (CoreUI Overrides)
+// =====================================================
+// CoreUI sidebar uses CSS variables, so we override with !important
+
+.sidebar {
+  &.sidebar-brand-green {
+    background-color: $color-accent-green-500 !important;
+  }
+}
+
+// Sidebar brand logo styles
+.sidebar-brand-logo {
+  height: 20px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.sidebar-brand-logo-narrow {
+  height: 32px;
+  width: auto;
+}
+
 // Modal Components
 .modal-overlay {
   position: fixed;
